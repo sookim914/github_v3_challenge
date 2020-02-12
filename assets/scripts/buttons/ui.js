@@ -1,9 +1,11 @@
 const api = require('./api')
+const date = require('./date.js')
 
 const getReposSuccess = (data) => {
   // data.times is an array of five objects of repositories
   // set fiveRepos as data.items
   const fiveRepos = data.items
+  $('.right-now').html(`Updated: ${date.today}`)
   // do map iteration to each element(repository) in an array
   fiveRepos.map(array => {
     // fiveRepos.indexOf(array) is part of each td's class name on the table
@@ -17,6 +19,7 @@ const getReposSuccess = (data) => {
 const getUsersSuccess = (data) => {
   // data.times is an array of five objects of users
   // set fiveUsers as data.items
+  $('.right-now').html(`Updated: ${date.today}`)
   const fiveUsers = data.items
   fiveUsers.map(array => {
     // fiveUsers.indexOf(array) is part of each td's class name on the table
