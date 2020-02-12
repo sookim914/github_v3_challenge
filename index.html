@@ -15,9 +15,9 @@
 
       <div class="wrapper">
         <!-- hot_repo button -->
-        <button id="hot_repo" class="btn btn-secondary main-buttons" data-toggle="modal" data-target="#repoModal"> Repos </button>
+        <button id="hot_repo" class="btn btn-secondary main-buttons" data-toggle="modal" data-target="#repoModal"> TOP 5 REPOS </button>
         <!-- prolific_users button-->
-        <button id="prolific_users" class="btn btn-success main-buttons" data-toggle="modal" data-target="#userModal"> Users </button>
+        <button id="prolific_users" class="btn btn-success main-buttons" data-toggle="modal" data-target="#userModal"> TOP 5 USERS </button>
       </div>
 
       <!-- hot_repo button modal -->
@@ -26,6 +26,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Top 5 repositories created last month with the most stars</h5>
+              <div class ="right-now"></div>
             </div>
             <div class="modal-body">
                 <table class='repo-table'>
@@ -83,6 +84,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Top 5 users created over last year with the most followers</h5>
+              <div class ="right-now"></div>
+
             </div>
             <div class="modal-body">
               <table class='user-table'>
