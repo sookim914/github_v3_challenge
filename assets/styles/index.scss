@@ -6,14 +6,26 @@ $black: #000;
 
 .main-buttons {
   margin-top: 30%;
+
 }
 
 .modal-body {
   padding: 2rem;
 }
 
+.modal-header {
+  display: block;
+}
+
 .modal-title {
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+.right-now {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  padding-top: 5px;
   text-align: center;
 }
 
