@@ -1,1 +1,29 @@
 @import '~bootstrap/scss/bootstrap';
+@import 'font';
+
+
+$black: #000;
+
+.main-buttons {
+  margin-top: 30%;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-title {
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid $black;
+  padding: 3px;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
