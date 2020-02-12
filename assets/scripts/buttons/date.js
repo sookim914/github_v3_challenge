@@ -30,5 +30,6 @@ const date = year + '-' + lastmonth
 
 module.exports = {
   date,
-  lastyear
+  lastyear,
+  today
 }
