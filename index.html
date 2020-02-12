@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Coding Challenge</title>
+      <title>Github v3 Coding Challenge</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,5 +12,125 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+
+      <div class="wrapper">
+        <!-- hot_repo button -->
+        <button id="hot_repo" class="btn btn-secondary main-buttons" data-toggle="modal" data-target="#repoModal"> Repos </button>
+        <!-- prolific_users button-->
+        <button id="prolific_users" class="btn btn-success main-buttons" data-toggle="modal" data-target="#userModal"> Users </button>
+      </div>
+
+      <!-- hot_repo button modal -->
+      <div class='repos modal' id="repoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Top 5 repositories created last month with the most stars</h5>
+            </div>
+            <div class="modal-body">
+                <table class='repo-table'>
+                  <tbody>
+                  <tr>
+                  <td>id</td>
+                  <td>name</td>
+                  <td>descriptions</td>
+                  <td>number of stars</td>
+                  </tr>
+                  <tr class="first-row">
+                  <td class='id-0'></td>
+                  <td class='name-0'></td>
+                  <td class='description-0'></td>
+                  <td class='number-of-stars-0'></td>
+                  </tr>
+                  <tr class="second-row">
+                  <td class='id-1'></td>
+                  <td class='name-1'></td>
+                  <td class='description-1'></td>
+                  <td class='number-of-stars-1'></td>
+                  </tr>
+                  <tr class="third-row">
+                  <td class='id-2'></td>
+                  <td class='name-2'></td>
+                  <td class='description-2'></td>
+                  <td class='number-of-stars-2'></td>
+                  </tr>
+                  <tr class="fourth-row">
+                  <td class='id-3'></td>
+                  <td class='name-3'></td>
+                  <td class='description-3'></td>
+                  <td class='number-of-stars-3'></td>
+                  </tr>
+                  <tr class="fifth-row">
+                  <td class='id-4'></td>
+                  <td class='name-4'></td>
+                  <td class='description-4'></td>
+                  <td class='number-of-stars-4'></td>
+                  </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+      <!-- prolific_users modal -->
+      <div class='users modal' id="userModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Top 5 users created over last year with the most followers</h5>
+            </div>
+            <div class="modal-body">
+              <table class='user-table'>
+                <tbody>
+                <tr>
+                <td>id</td>
+                <td>login</td>
+                <td>followers</td>
+                <td>avatar</td>
+                </tr>
+                <tr class="first-row">
+                <td class='user-id-0'></td>
+                <td class='user-login-0'></td>
+                <td class='user-followers-0'></td>
+                <td class='user-avatar-0'></td>
+                </tr>
+                <tr class="second-row">
+                <td class='user-id-1'></td>
+                <td class='user-login-1'></td>
+                <td class='user-followers-1'></td>
+                <td class='user-avatar-1'></td>
+                </tr>
+                <tr class="third-row">
+                <td class='user-id-2'></td>
+                <td class='user-login-2'></td>
+                <td class='user-followers-2'></td>
+                <td class='user-avatar-2'></td>
+                </tr>
+                <tr class="fourth-row">
+                <td class='user-id-3'></td>
+                <td class='user-login-3'></td>
+                <td class='user-followers-3'></td>
+                <td class='user-avatar-3'></td>
+                </tr>
+                <tr class="fifth-row">
+                <td class='user-id-4'></td>
+                <td class='user-login-4'></td>
+                <td class='user-followers-4'></td>
+                <td class='user-avatar-4'></td>
+                </tr>
+                </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+      </div>
     </body>
 </html>
